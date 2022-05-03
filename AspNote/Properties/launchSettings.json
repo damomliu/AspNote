@@ -4,7 +4,8 @@
     "anonymousAuthentication": true, 
     "iisExpress": {
       "applicationUrl": "http://localhost:30390",
-      "sslPort": 44345
+      "sslPort": 44345,
+      "// sslPort = 0 if not HTTPS": 0
     }
   },
   "profiles": {
@@ -17,8 +18,12 @@
     },
     "AspNote": {
       "commandName": "Project",
+      "(core5 新增)　dotnetRunMessages": true,
       "launchBrowser": true,
+
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "// 若不開放 HTTPS, 則只會有 http//* ": 0,
+
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
